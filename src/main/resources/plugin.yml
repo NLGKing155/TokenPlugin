@@ -1,0 +1,46 @@
+name: TokenPlugin
+version: 1.0.0
+main: com.tokenplugin.TokenPlugin
+api-version: 1.20
+author: NLG_King
+description: A complete token system with 42 tokens, life system, unban book, and more!
+
+commands:
+  tokens:
+    aliases: [t, tokenlist]
+    description: Show all your tokens
+  token:
+    aliases: [tinfo, tokeninfo]
+    description: Get information about a specific token
+  tokenshop:
+    aliases: [tshop, shop]
+    description: Open token exchange shop
+  tokenleaderboard:
+    aliases: [tlb, leaderboard, lb]
+    description: Show top token holders
+  tokencraft:
+    aliases: [tcraft, craft]
+    description: Craft a token
+  tokenuse:
+    aliases: [tuse, use]
+    description: Use a token from your inventory
+  tokenadmin:
+    aliases: [tadmin]
+    description: Admin commands for token management
+  settokenrecipe:
+    aliases: [setrecipe]
+    description: Set crafting recipe for a token
+  life:
+    aliases: [lives]
+    description: Check or manage your lives
+
+permissions:
+  token.admin:
+    default: op
+    description: Access to token admin commands
+  token.use:
+    default: true
+    description: Permission to use tokens
+  token.craft:
+    default: true
+    description: Permission to craft tokens

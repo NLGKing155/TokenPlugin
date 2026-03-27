@@ -1,0 +1,132 @@
+# ============================================
+# TokenPlugin Configuration
+# ============================================
+
+# Token Settings
+tokens:
+  common:
+    count: 21
+    cooldown: 30
+    craftable: true
+  rare:
+    count: 9
+    cooldown: 45
+    craftable: true
+  legendary:
+    count: 8
+    cooldown: 60
+    craftable: false
+  god:
+    count: 3
+    cooldown: 120
+    admin_only: true
+    craftable: false
+  special:
+    count: 1
+    cooldown: 300
+    admin_only: true
+    craftable: false
+
+# Join Reward
+join_reward:
+  enabled: true
+  common_chance: 55
+  rare_chance: 28
+  legendary_chance: 17
+  title: "&6&l✨ You received a Token! ✨"
+  subtitle: "&aCheck your inventory!"
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+
+# Death System
+death_system:
+  natural_death_keep_tokens: true
+  pvp_death_lose_tokens: true
+  pvp_death_lose_percent: 100
+
+# Life System
+life_system:
+  enabled: true
+  start_lives: 10
+  max_lives: 50
+  pvp_death_lose: 1
+  natural_death_lose: 0
+  ban_on_zero: true
+  warning_lives: 3
+
+# Token Shop
+token_shop:
+  enabled: true
+  items:
+    common_to_rare:
+      cost_token: "common"
+      cost_amount: 5
+      give_token: "rare"
+      give_amount: 1
+      admin_only: false
+    rare_to_legendary:
+      cost_token: "rare"
+      cost_amount: 3
+      give_token: "legendary"
+      give_amount: 1
+      admin_only: false
+    legendary_to_god:
+      cost_token: "legendary"
+      cost_amount: 5
+      give_token: "god"
+      give_amount: 1
+      admin_only: true
+
+# Leaderboard
+leaderboard:
+  enabled: true
+  update_interval: 60
+  top_count: 10
+
+# Special Players
+special_players:
+  enabled: true
+  list:
+    - "NLG_King"
+  auto_give_tokens:
+    admin_token: true
+    god_tokens: true
+  welcome_message: "&6&l✨ Welcome, Lord %player%! ✨"
+
+# Unban Book
+unban_book:
+  enabled: true
+  recipe:
+    material1: "OBSIDIAN"
+    material2: "ENCHANTED_BOOK"
+    material3: "DIAMOND_BLOCK"
+  book_name: "&c&lUnban Book"
+  book_author: "System"
+
+# Particle Settings (Lag-Free)
+particles:
+  enabled: true
+  common: "VILLAGER_HAPPY"
+  rare: "FLAME"
+  legendary: "DRAGON_BREATH"
+  god: "TOTEM_OF_UNDYING"
+  special: "FIREWORK"
+
+# Sound Settings
+sounds:
+  enabled: true
+  common: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  rare: "ENTITY_BLAZE_SHOOT"
+  legendary: "ENTITY_ENDER_DRAGON_GROWL"
+  god: "ENTITY_WITHER_SPAWN"
+  special: "ENTITY_FIREWORK_ROCKET_BLAST"
+
+# Messages
+messages:
+  prefix: "&8[&6Token&8] &r"
+  no_permission: "&cYou don't have permission!"
+  token_received: "&aYou received a %token% token!"
+  token_used: "&aYou used %token% token!"
+  token_lost: "&cYou lost all your tokens in PvP!"
+  shop_purchased: "&aYou exchanged %cost% %cost_token% for %give% %give_token%!"
+  life_warning: "&c⚠️ WARNING! You only have %lives% lives left! ⚠️"
+  banned_no_life: "&c&lYou have been banned! No lives left!"
